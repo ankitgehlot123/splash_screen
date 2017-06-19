@@ -16,15 +16,13 @@ public class splash_screen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-        TextView textView=(TextView) findViewById(R.id.title)
-        private void RunAnimation()
-        {
-            Animation a = AnimationUtils.loadAnimation(this,);
+        TextView textView=(TextView) findViewById(R.id.title);
+            Animation a = AnimationUtils.loadAnimation(this,android.R.anim.slide_in_left);
             a.reset();
             TextView tv = (TextView) findViewById(R.id.title);
             tv.clearAnimation();
             tv.startAnimation(a);
-        }
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
